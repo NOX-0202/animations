@@ -1,0 +1,47 @@
+.main-container{
+    width: 100vh;
+    height: 60vh;
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 18%;
+    left: 22%;
+}
+
+.square{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(200.gif);
+    animation-name: moves;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moves {
+
+    0%{
+        transform: translateX(0);
+    }
+
+    25%{
+        transform: translateX(300%);
+    }
+
+    50%{
+        transform: translate(300%, 139.9%); 
+    }
+
+    75%{
+        transform: translate(0, 139.9%); 
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+
+}
